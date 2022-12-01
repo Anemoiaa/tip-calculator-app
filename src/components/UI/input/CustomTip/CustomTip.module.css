@@ -1,0 +1,25 @@
+.customTip {
+    padding: 0px 3px 0px 3px;
+    background-color: #F3F9FA;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 1.48;
+    color: #00474B;
+    text-align: right;
+  }
+  
+  @media (min-width: 1024px) {
+    .customTip {
+      padding: 6px 15px 6px 14px;
+    }
+  }
+  
+  .customTip::placeholder {
+    text-align: center;
+    color: #547878;
+  }
+  
+  .customTip:focus {
+    outline: 2px solid #26C2AE;
+  }
+  

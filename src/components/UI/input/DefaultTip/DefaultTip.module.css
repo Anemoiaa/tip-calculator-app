@@ -1,0 +1,23 @@
+.defaultTip {
+    padding: 6px 50px 6px 50px;
+    background-color: #00474B;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 1.48;
+    color: #fff;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .defaultTip {
+        padding: 6px 14px 6px 13px;
+    }
+}
+
+.defaultTip input {
+    display: none;
+}
+
+.defaultTip:has(> input:checked) {
+    background-color: #26C2AE;
+}
