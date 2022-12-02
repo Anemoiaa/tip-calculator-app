@@ -2,7 +2,7 @@ import cl from "./ResetButton.module.css";
 
 function ResetButton(props) {
     return (
-        <button className={cl.resetBtn}>RESET</button>
+        <button {...props} className={cl.resetBtn}>RESET</button>
     );
 }
 

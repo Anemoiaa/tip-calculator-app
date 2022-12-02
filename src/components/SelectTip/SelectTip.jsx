@@ -7,14 +7,15 @@ function SelectTip(props) {
         <div className={cl.container}>
             <div className="title">Select Tip %</div>
             <div className={cl.content}>
-                {[5, 10, 15, 25, 50].map((value, index) =>
+                {props.defTips.map((value, index) =>
                     <DefaultTip
                         key={index}
                         value={value}
-                        checked={false}
+                        checked={value === props.selectedTip}
+                        onChange={props.onChange}
                     />
                 )}
-                <CustomTip />
+                <CustomTip value={props.selectedTip} onChange={props.onChange} />
             </div>
         </div>
     );
